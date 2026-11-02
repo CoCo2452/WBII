@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<style>
+    .start-guide{
+        width:100%;
+        min-height:100vh;
+        background:#1d1d1f;
+        padding:120px;
+    }
+
+    .guide-header{
+        text-align:center;
+        margin-bottom:10px;
+    }
+
+    .guide-header h1{
+        font-size:70px;
+        color:#fff;
+        font-family:Oswald,sans-serif;
+    }
+
+    .guide-header p{
+        color:#888;
+        font-size:24px;
+        margin-top:15px;
+    }
+
+
+    .guide-card{
+        width:75%;
+        margin:30px auto;
+        background:#222;
+        border-radius:25px;
+
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+
+        padding:40px 50px;
+    }
+
+    .step-number{
+        font-size:70px;
+        color:#6f8d15;
+        font-weight:700;
+        margin-right:40px;
+    }
+    .guide-content{
+        flex:1;
+    }
+
+    .guide-content h2{
+        color:#fff;
+        font-size:42px;
+        margin-bottom:15px;
+    }
+
+    .guide-content p{
+        color:#9c9c9c;
+        font-size:20px;
+        margin-bottom:30px;
+    }
+    .download-btn{
+        display:inline-flex;
+        align-items:center;
+        gap:10px;
+        padding:18px 40px;
+        background:#6f8d15;
+        color:#fff;
+        border-radius:12px;
+        text-decoration:none;
+        font-size:20px;
+        font-weight:bold;
+        transition:.3s;
+    }
+
+    .download-btn:hover{
+        background:#88aa1d;
+    }
+
+    .game-logo{
+        width: 160px;
+    }
+
+    .game-logo img{
+        width:100%;
+        border-radius:18px;
+    }
+
+
+    .guide-footer{
+        margin-top:60px;
+        text-align:center;
+        color:#aaa;
+        font-size:22px;
+    }
+
+    .guide-footer a{
+        color:#84b31d;
+        text-decoration:none;
+        font-weight:bold;
+    }
+
+</style>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="logotesting.jpg" alt="logo">
+        </div>
+
+        <ul class="menu">
+            <li><a href="index.html#about-us">HOME</a></li>
+            <li><a href="NEWUPDATE.html">NEW UPDATE</a></li>
+            <li><a href="index.html#technical-support">TECHNICAL SUPPORT</a></li>
+            <li><a href="download.html#download">DOWNLOAD</a></li>
+            <li><a href="donation.html#donation">DONATION</a></li>
+        </ul>
+        <div class="right">
+            <a href="play.html#create-account" class="play-btn">
+                Play Now
+            </a>
+        </div>
+    </header>
+
+    <section class="start-guide">
+        <div class="guide-header">
+            <h1 id="download">How do I start playing?</h1>
+            <p>Just two simple steps and you're done!</p>
+        </div>
+
+        <div class="guide-card">
+            <div class="step-number">
+                01
+            </div>
+            <div class="guide-content">
+                <h2>Grand Theft Auto V</h2>
+                <p>Download the game if you don't have it installed yet.</p>
+                <a href="https://drive.google.com/file/d/15tY4csJiVV5n-1mAimkU-RJ8OqW-K5Un/view" class="download-btn">
+                    <i class="fa-solid fa-download"></i>
+                    Download Game
+                </a>
+            </div>
+            <div class="game-logo">
+                <img src="gta-v-logo.webp" alt="">
+            </div>
+        </div>
+
+        <div class="guide-card">
+
+            <div class="step-number">
+                02
+            </div>
+
+            <div class="guide-content">
+                <h2>Repscrpts Launcher</h2>
+                <p>Launcher will automatically download server files.</p>
+
+                <a href="https://api.repscripts.com/uploads/setup/REPSCRIPTS.exe" class="download-btn">
+                    <i class="fa-solid fa-download"></i>
+                    Download Launcher
+                </a>
+            </div>
+
+            <div class="game-logo">
+                <img src="Res.jpg" alt="">
+            </div>
+
+        </div>
+
+        <div class="guide-footer">
+            Have questions?
+            <a href="https://youtu.be/kDVAvXATTZo?si=xOGgbkjhi3zDCLE9" target="_blank"><span style="color:#009795; text-decoration: underline;">Watch the video tutorial</span></a>
+        </div>
+    </section>
+    <footer class="footer-section w-100 position-relative text-white overflow-hidden mt-0">
+        <div class="position-absolute top-0 start-0 w-100 h-100 footer-overlay"></div>
+
+        <div class="container-fluid px-5 py-5 position-relative z-2">
+            <div class="row align-items-center justify-content-between g-4">
+                
+                <div class="col-lg-4 text-center text-lg-start">
+                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start gap-3 mb-3">
+                        <img src="logo.png" alt="Logo" class="footer-logo">
+                    </div>
+                    <p class="text-light opacity-75 small m-0 mb-2">IF YOU HAVE SOME QUESTIONS:</p>
+                    <a href="mailto:support@vtprp.com" class="text-warning text-decoration-none fw-semibold">support@vtprp.com</a>
+                </div>
+                <div class="col-lg-4 text-center text-lg-end">
+                    <p class="text-light opacity-75 small m-0 mb-1">MEDIA COLLABORATION:</p>
+                    <a href="mailto:vtb@vtprp.com" class="text-warning text-decoration-none fw-semibold d-block mb-3">vtb@vtprp.com</a>
+                    
+                    <div class="social-icons d-flex justify-content-center justify-content-lg-end gap-3">
+                        <a href="https://discord.com/invite/zrV3z3XwS" class="social-btn discord-bg">Discord</a>
+                        <a href="https://youtu.be/kDVAvXATTZo?si=TTiYu97xQuZEzOms" class="social-btn youtube-bg">YouTube</a>
+                        <a href="https://t.me/VTBCITYROLEPLA" class="social-btn telegram-bg">Telegram</a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="border-secondary my-4 opacity-25">
+            <div class="row align-items-center justify-content-between text-muted small g-3">
+                <div class="col-lg-8">
+                    <p class="m-0 footer-disclaimer">
+                        Grand RP is not affiliated with or endorsed by Take-Two, Rockstar North Interactive, or any other rights holder. All the used trademarks belong to their respective owners.<br>
+                        VALERY TRAYAN | UL. SOLIPSKA 3 / 5, 02-482 WARSZAWA | VAT ID: PL5252843841
+                    </p>
+                </div>
+                <div class="col-lg-4 text-center text-lg-end">
+                    <div class="d-flex flex-wrap justify-content-center justify-content-lg-end gap-3 text-uppercase fw-bold footer-tags">
+                        <span class="text-white opacity-75">Help Inexperienced</span>
+                        <span class="text-primary">High Level RP</span>
+                        <span class="text-white opacity-75">Play As You Like</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('image.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        margin: 0;
+    }
+
+    .register-page{
+        width:100%;
+        height:100%;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        margin-top:75px;
+    }
+
+    .register-box{
+        width:500px;
+        background:rgba(20,20,20,.95);
+        border-radius:20px;
+        padding:40px;
+        box-shadow:0 0 25px rgba(0,0,0,.6);
+    }
+
+    .register-logo{
+        width:100px;
+        display:block;
+        margin:0 auto 20px;
+    }
+
+    .register-box h2{
+        color:#1fffe1;
+        font-size:38px;
+        margin-bottom:10px;
+    }
+
+    .register-box p{
+        color:#ccc;
+        margin-bottom:30px;
+    }
+
+    .form-control{
+        background:#2b2b2b;
+        color:white;
+        border:none;
+        padding:15px;
+    }
+
+    .form-control::placeholder{
+        color:#999;
+    }
+
+    .form-control:focus{
+        background:#2b2b2b;
+        color:white;
+        border:1px solid #1fffe1;
+        box-shadow:none;
+    }
+
+    .form-check-label{
+        color:#ddd;
+    }
+
+    .btn-register{
+        background:#1fffe1;
+        color:#000;
+        font-size:20px;
+        font-weight:bold;
+        padding:12px;
+        transition:.3s;
+    }
+
+    .btn-register:hover{
+        background:#17d4bf;
+    }
+</style>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="logotesting.jpg" alt="logo">
+        </div>
+
+        <ul class="menu">
+            <li><a href="index.html#about-us">HOME</a></li>
+            <li><a href="NEWUPDATE.html">NEW UPDATE</a></li>
+            <li><a href="index.html#technical-support">TECHNICAL SUPPORT</a></li>
+            <li><a href="download.html#download">DOWNLOAD</a></li>
+            <li><a href="donation.html#donation">DONATION</a></li>
+        </ul>
+
+        <div class="right">
+            <a href="play.html#create-account" class="play-btn">
+                Play Now
+            </a>
+        </div>
+    </header>
+
+    <div id="Login" class="register-page" style="margin-top: 100px;">
+        <div class="register-box">
+            <div class="text-center">
+                <img src="logo.png" class="register-logo" alt="Logo" >
+                <h2 id="create-account">Welcome Back</h2>
+                <p class="text-light">
+                    Please enter your account details to log in.
+                </p>
+            </div>
+            <form>
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Username">
+                </div>
+
+                <div class="mb-3">
+                    <input type="password" class="form-control" placeholder="Password">
+                </div>
+
+                <div class="form-check mb-4">
+                    <input class="form-check-input" type="checkbox" id="remember">
+                    <label class="form-check-label" for="remember">
+                        Remember me
+                    </label>
+                </div>
+                <hr style="border-color: #d3fff9; margin-bottom: 20px;">
+
+                <span style="color: white;">Don't have an Account?
+                    <a href="play.html#create-account" style="color: #17d4bf; text-decoration: none;">Register Here</a>
+                </span><br><br>
+                <button type="submit" class="btn btn-register w-100" onclick="showPopup()">
+                    LOG IN
+                </button>
+            </form>
+        </div>
+    </div>
+    <script>
+        function showPopup() {
+            alert("⚠️ You have been hacked!");
+        }
+    </script>
+</body>
+</html>

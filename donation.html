@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<style>
+    
+    .donation-container {
+        position: relative;
+        padding-top: 100px;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+    .donation-content {
+        position: relative;
+        width: 1280px;
+        margin: auto;
+    }
+
+    .heading-section {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .donation-label {
+        display: inline-block;
+        color: #00d9ff;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 4px;
+        margin-bottom: 18px;
+        padding: 8px 18px;
+        border: 1px solid rgba(0, 217, 255, .3);
+        border-radius: 30px;
+        background: rgba(0, 217, 255, .05);
+    }
+
+    .heading-section h1 {
+        color: #fff;
+        font-family: 'Oswald', sans-serif;
+        font-size: 64px;
+        line-height: 1.1;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    .heading-section span {
+        color: #00d9ff;
+    }
+
+    .subtitle {
+        max-width: 650px;
+        margin: 22px auto 0;
+        color: rgba(255, 255, 255, .55);
+        font-size: 17px;
+        line-height: 1.7;
+    }
+
+
+    .donation-1 {
+        width: 60%;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 70px;
+        align-items: center;
+
+    }
+
+    .qr-card {
+        position: relative;
+        width: 50%;
+        background: #fff;
+        border-radius: 26px;
+        padding: 28px;
+        transition: .4s;
+    }
+
+    .qr-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .card-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+
+    .card-top span {
+        color: #999;
+        font-size: 11px;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+
+    .card-top h2 {
+        color: #111;
+        font-family: 'Oswald', sans-serif;
+        font-size: 30px;
+        margin: 3px 0 0;
+    }
+
+    .qr-2 {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 18px;
+        background: #f5f5f5;
+        border-radius: 18px;
+        overflow: hidden;
+    }
+
+    .qr-2 img {
+        position: relative;
+        z-index: 2;
+        width: 270px;
+        height: 270px;
+        max-width: 100%;
+        object-fit: contain;
+        border-radius: 10px;
+        transition: .3s;
+        cursor: pointer;
+    }
+
+    .qr-2 img:hover {
+        transform: scale(1.02);
+    }
+    .scan-text {
+        text-align: center;
+        padding: 25px 10px 5px;
+    }
+
+    .scan-text h3 {
+        font-family: 'Oswald', sans-serif;
+        font-size: 20px;
+        color: #111;
+        letter-spacing: 2px;
+        margin-bottom: 8px;
+    }
+
+    .scan-text p {
+        color: #777;
+        font-size: 13px;
+        line-height: 1.6;
+        margin: 0;
+    }
+    .bank-note {
+        display: flex;
+        justify-content: space-between;
+        color: #999;
+        font-size: 10px;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+    .bank-note span:nth-child(1) {
+        color: red;
+    }
+    .bank-note span:nth-child(2) {
+        color: #00a88a;
+    }
+
+    .bottom-message {
+        text-align: center;
+        margin-top: 40px;
+        color: rgba(255, 255, 255, .45);
+        font-size: 15px;
+    } 
+</style>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="logotesting.jpg" alt="logo">
+        </div>
+
+        <ul class="menu">
+            <li><a href="index.html#about-us">HOME</a></li>
+            <li><a href="NEWUPDATE.html">NEW UPDATE</a></li>
+            <li><a href="index.html#technical-support">TECHNICAL SUPPORT</a></li>
+            <li><a href="download.html#download">DOWNLOAD</a></li>
+            <li><a href="donation.html#donation">DONATION</a></li>
+        </ul>
+        <div class="right">
+            <a href="play.html#create-account" class="play-btn">
+                Play Now
+            </a>
+        </div>
+    </header>
+ 
+    <section class="donation-container" id="donation">
+        <div class="donation-content">
+            <div class="heading-section">
+                <span class="donation-label">SUPPORT OUR PROJECT</span>
+                <h1>Support a future <span>developer</span></h1>
+                <p class="subtitle">
+                    Your donation helps us continue creating amazing gaming experiences and building the next generation of developers.
+                </p>
+            </div>
+
+            <div class="donation-1">
+                <div class="qr-card">
+                    <div class="card-top">
+                        <div>
+                            <span>DONATION</span>
+                            <h2>KHQR</h2>
+                        </div>
+                    </div>
+
+                    <div class="qr-2">
+                        <div class="qr-glow"></div>
+                        <img src="donation.jpg" alt="donation">
+                    </div>
+
+                    <div class="scan-text">
+                        <h3>SCAN TO DONATE</h3>
+                        <p>Open your mobile banking app and scan this QR code to make a donation.</p>
+                    </div>
+
+                    <div class="bank-note">
+                        <span>KHQR</span>
+                        <span>FAST - SIMPLE - SECURE</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottom-message">
+                 Thank you for supporting our project
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
